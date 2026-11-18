@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #bb8e8e;
+  color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 20%;
+ 
+}
+.numberContainer {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #5b27b5;
+  gap: 1rem;
+  
+}
+.circle {
+  width: 85px;
+  height: 85px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #b70909;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}

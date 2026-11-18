@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #2f8ff0;
+}
+.calculator {
+  background-color: #1e293b;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.display {
+  width: 100%;
+  height: 100px;
+  background-color: #0f172a;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  padding: 10px;
+  font-size: 30px;
+  color: #f8fafc;
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+  height: 75%;
+  width: 100%;
+}
+.buttonsContainer button {
+  background-color: #334155;
+  color: #f8fafc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonsContainer button:hover {
+  background-color: #41556e;
+}
+/* 1. Top row buttons (C, DEL, %) ke liye soft grey text color */
+.buttonsContainer button:nth-child(1),
+.buttonsContainer button:nth-child(2),
+.buttonsContainer button:nth-child(3) {
+  color: #94a3b8;
+}
+
+/* 2. Side operators (/, *, -, +) ke liye soft blue text color */
+.buttonsContainer button:nth-child(4),
+.buttonsContainer button:nth-child(8),
+.buttonsContainer button:nth-child(12),
+.buttonsContainer button:nth-child(16) {
+  color: #38bdf8;
+}
+
+/* 3. Equal (=) button ko highlight karne ke liye sky blue background */
+.buttonsContainer button:nth-child(20) {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+.buttonsContainer button:nth-child(20):hover {
+  background-color: #0369a1;
+}
