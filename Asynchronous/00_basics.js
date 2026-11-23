@@ -24,12 +24,12 @@
 
 // console.log("Dance seekhna hai")
 
-async function fetchData() {
-    let response = await fetch('https://jsonplaceholder.typicode.com/users');
-    console.log(await response.json());
-}
+// async function fetchData() {
+//     let response = await fetch('https://jsonplaceholder.typicode.com/users');
+//     console.log(await response.json());
+// }
 
-fetchData();
+// fetchData();
 
-console.log("hello")
-console.log("some important task")
+// console.log("hello")
+// console.log("some important task")
